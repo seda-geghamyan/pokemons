@@ -1,6 +1,6 @@
 <template>
   <div class="card bg-secondary bg-opacity-20">
-    <div class="overflow-hidden">
+    <div class="overflow-hidden text-center">
       <img :src="image" class="card-img-top" :alt="title" />
     </div>
     <div
@@ -26,6 +26,7 @@
   }
   &-img-top {
     min-height: 214px;
+    max-width: 400px;
     transition: 0.5s;
     transform: scale(0.8);
   }

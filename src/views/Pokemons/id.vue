@@ -1,7 +1,7 @@
 <template>
   <div v-if="pokemon.id == $route.params.id">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-md-8 col-lg-4 mx-auto mb-lg-0 mb-5">
         <app-card
           class="h-100"
           :image="pokemon.image"
