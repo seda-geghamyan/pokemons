@@ -3,7 +3,7 @@
     <transition>
       <div class="modal-dialog" v-if="value">
         <div class="modal-content bg-body-bg">
-          <div class="modal-header  border-secondary border-opacity-20">
+          <div class="modal-header border-secondary border-opacity-20">
             <p class="modal-title text-capitalize fs-4">
               {{ data.name }}
             </p>
@@ -25,7 +25,7 @@
                 type="button"
                 class="btn btn-secondary"
                 @click="close"
-                >
+              >
                 More
               </router-link>
             </div>
@@ -46,7 +46,7 @@ export default {
       required: true,
     },
   },
-  emits: ["update:value"],
+
   methods: {
     close() {
       this.$emit("update:value", false);

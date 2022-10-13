@@ -89,6 +89,7 @@ export default createStore({
     },
   },
 });
+
 function getPokemonObj({ data }) {
   return {
     id: data.id,

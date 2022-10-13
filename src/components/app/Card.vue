@@ -25,8 +25,8 @@
     }
   }
   &-img-top {
-    min-height: 214px;
     max-width: 400px;
+    min-height: 214px;
     transition: 0.5s;
     transform: scale(0.8);
   }

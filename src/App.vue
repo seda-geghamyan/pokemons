@@ -12,15 +12,14 @@
 </template>
 
 <script>
-import PopupsDetails from "@/components/popups/Details.vue";
 import AppBreadcrumb from "@/components/app/Breadcrumb.vue";
+import PopupsDetails from "@/components/popups/Details.vue";
 
 export default {
   components: {
-    PopupsDetails,
     AppBreadcrumb,
+    PopupsDetails,
   },
-  emits: ["openDetailsPopup"],
 
   data() {
     return {
@@ -29,10 +28,11 @@ export default {
       isDetailsOpened: false,
     };
   },
+
   methods: {
     openDetailsPopup(value, data) {
-      this.isDetailsOpened = value;
       this.pokemon = data;
+      this.isDetailsOpened = value;
     },
   },
 };

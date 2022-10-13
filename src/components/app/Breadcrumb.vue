@@ -6,7 +6,12 @@
         :key="item"
         class="breadcrumb-item text-capitalize"
       >
-        <component :is="index < list.length-1 ? 'router-link' : 'span'" :to="`/${item}`">{{ item }}</component>
+        <component
+          :is="index < list.length - 1 ? 'router-link' : 'span'"
+          :to="`/${item}`"
+        >
+          {{ item }}
+        </component>
       </li>
     </ol>
   </nav>
