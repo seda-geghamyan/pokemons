@@ -1,0 +1,98 @@
+// font weight
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 600;
+
+// font size
+$h1-font-size: 48px;
+$h2-font-size: 32px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+
+$line-height-base: 1.4;
+
+// borders
+$border-radius: 12px;
+$border-radius-sm: 8px;
+$border-radius-lg: 26px;
+
+$modal-content-border-radius: 12px;
+// buttons
+$btn-font-size: 18px;
+$btn-padding-y: 10px;
+$btn-padding-x: 10px;
+$btn-border-radius: 12px;
+$btn-font-weight: $font-weight-bolder;
+
+$btn-font-size-sm: 16px;
+$btn-padding-y-sm: 3px;
+$btn-padding-x-sm: 12px;
+$btn-border-radius-sm: 12px;
+
+// colors
+$body-bg: #2b2e35;
+$body-color: #b0b3ba;
+$primary: #0bd6bb;
+$secondary: #b0b3ba;
+$red: rgba(#eb4b4b, 0.5);
+$pink: rgba(#d32ce6, 0.5);
+$purple: rgba(#8847ff, 0.5);
+$primary-50: rgba($primary, 0.5);
+$light-blue: rgba(#b0c3d9, 0.5);
+$secondary-50: rgba($secondary, 0.5);
+$green: rgba(#4eeb4b, 0.5);
+$orange: #f59d21;
+$light: #b0b3ba;
+
+$theme-colors: (
+  "body-color": $body-color,
+  "body-bg": $body-bg,
+  "primary": $primary,
+  "secondary": $secondary,
+  "secondary-50": $secondary-50,
+  "red": $red,
+  "pink": $pink,
+  "purple": $purple,
+  "primary-50": $primary-50,
+  "light-blue": $light-blue,
+  "orange": $orange,
+  "light": $light,
+  "green": $green,
+);
+
+// box-shadow
+$box-shadow-light-blue: 0 0 6px rgba($light-blue, 0.25);
+$box-shadow-secondary-50: 0 0 6px rgba($secondary-50, 0.25);
+$box-shadow-primary-50: 0 0 6px rgba($primary-50, 0.25);
+$box-shadow-purple: 0 0 6px rgba($purple, 0.25);
+$box-shadow-pink: 0 0 6px rgba($pink, 0.25);
+$box-shadow-red: 0 0 6px rgba($red, 0.25);
+
+// =====================================
+
+$header-height: 56px;
+$footer-height: 50px;
+//===========================================
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 575px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1040px,
+  xxl: 1097px,
+);
+
+$enable-negative-margins: true;
+$grid-gutter-width: 24px !default;
+
+@import "./_utilities";
