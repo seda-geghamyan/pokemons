@@ -2,7 +2,7 @@
   <div v-if="pokemons.length">
     <div class="row">
       <div class="col-md-6 col-lg-4 mb-4">
-        <pokemons-search v-model:value="search" />
+        <pokemons-search v-model:value="search" placeholder="Search . . . " />
       </div>
       <div class="col-12">
         <h1 class="text-center text-light mb-4">Pokemons</h1>
@@ -42,7 +42,7 @@
       </div>
     </div>
   </div>
-  <loader v-else />
+  <app-loader v-else />
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";

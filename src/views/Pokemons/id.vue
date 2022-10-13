@@ -54,7 +54,7 @@
       </div>
     </div>
   </div>
-  <loader v-else />
+  <app-loader v-else />
 </template>
 <style scoped>
 .min-width {

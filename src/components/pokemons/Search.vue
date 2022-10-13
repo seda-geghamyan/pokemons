@@ -2,7 +2,7 @@
   <input
     v-model="value"
     type="text"
-    placeholder="Search . . . "
+    :placeholder="placeholder"
     class="form-control"
     @input="$emit('update:value', value)"
   />
@@ -12,6 +12,10 @@ export default {
   props: {
     value: {
       type: String,
+    },
+    placeholder: {
+      type: String,
+      required: true,
     },
   },
 };
